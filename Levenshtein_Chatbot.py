@@ -85,7 +85,7 @@ def find_best_answer(input_sentense):
         best_match_index = similarities.argmax()   # 유사도 값이 가장 큰 값의 인덱스를 반환
         return le_answers[best_match_index]  
 
-filepath = 'T2.csv'
+filepath = 'ChatbotData.csv'
 samples= load_data(filepath)
 
 vectorizer = TfidfVectorizer()
